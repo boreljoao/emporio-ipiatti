@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      
+<!-- Páginas principais -->
+<url>
+  <loc>https://emporioipiatti.com.br/</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://emporioipiatti.com.br/sobrenos.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://emporioipiatti.com.br/angatti.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://emporioipiatti.com.br/produtos.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<!-- Páginas institucionais -->
+<url>
+  <loc>https://emporioipiatti.com.br/parcerias.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://emporioipiatti.com.br/faleconosco.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<!-- Conteúdo dinâmico -->
+<url>
+  <loc>https://emporioipiatti.com.br/noticias.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.85</priority>
+</url>
+
+<!-- Páginas de produtos (exemplo - adicione todas as suas páginas de produtos) -->
+<url>
+  <loc>https://emporioipiatti.com.br/produtos/talharim-artesanal.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://emporioipiatti.com.br/produtos/penne-integral.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.75</priority>
+</url>
+
+<!-- Páginas de blog/notícias (exemplo - adicione URLs individuais de notícias importantes) -->
+<url>
+  <loc>https://emporioipiatti.com.br/noticias/selo-inspecao-municipal.html</loc>
+  <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+
+</urlset>
