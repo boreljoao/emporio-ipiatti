@@ -1,0 +1,928 @@
+/* ===== NOVAS SEÇÕES ANGATTI - CSS ADICIONAL ===== */
+
+/* 1. Hero Section Atualizada - Conheça a Marca */
+.angatti-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), 
+                url('/assets/media/bgs/wepik-export-20231027165723CAFV.jpeg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+body{
+    background-image: url('/assets/media/bgs/jordane-mathieu-k7VgPnWFcx8-unsplash.jpg');
+    background-color: #f8f5f03f; /* Cor de fallback */
+    background-position-y: 90%;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 245, 240, 0.062);
+    z-index: -1;
+}
+
+.brand-art {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.brand-art h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s ease;
+}
+
+.brand-art h1 span {
+    color: #d4af37; /* Dourado */
+    display: block;
+    font-size: 5rem;
+}
+
+.tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.heritage-badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.heritage-badge img {
+    height: 30px;
+}
+
+.heritage-badge span {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* 2. Seção de Talharins - Estilo Premium */
+/* Seção Talharim Premium */
+.premium-talharim-section {
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, #ffffff, #f9f8f3);
+}
+
+.talharim-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.talharim-premium-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.talharim-premium-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.product-pouch {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.pouch-image {
+    max-height: 280px;
+    width: auto;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+    transition: transform 0.4s ease;
+}
+
+.talharim-premium-card:hover .pouch-image {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.product-details {
+    padding: 2rem;
+    background: white;
+}
+
+.product-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.product-details h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #d4af37;
+}
+
+.product-specs {
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-specs li {
+    margin-bottom: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.product-specs i {
+    color: #8a9b6e;
+}
+
+.composition {
+    background: #f9f8f3;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #666;
+    border-left: 3px solid #e8d9b5;
+}
+
+.gluten-free-badge {
+    background: #f0f7eb;
+    color: #5a7247;
+    padding: 0.6rem 1rem;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.gluten-free-badge i {
+    font-size: 1.1rem;
+}
+/* Seção Farinhas Funcionais - Estilo Alternativo */
+.functional-flours-section {
+    padding: 6rem 0;
+    background-color: #fcfaf7;
+    position: relative;
+    overflow: hidden;
+}
+
+.functional-flours-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/media/patterns/grain-pattern-light.png') repeat;
+    opacity: 0.03;
+    pointer-events: none;
+}
+
+.flour-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.flour-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.flour-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.flour-visual {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f5f0 0%, #e8e3db 100%);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flour-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #d4af37;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.flour-pack {
+    max-height: 220px;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+    transition: transform 0.4s ease;
+}
+
+.flour-item:hover .flour-pack {
+    transform: scale(1.08);
+}
+
+.flour-bg-element {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flour-details {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.flour-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.flour-specs {
+    margin: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.flour-specs p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flour-specs i {
+    color: #8a9b6e;
+    width: 20px;
+    text-align: center;
+}
+
+.flour-benefits {
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style: none;
+    flex: 1;
+}
+
+.flour-benefits li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    line-height: 1.4;
+}
+
+.flour-benefits i {
+    color: #8a9b6e;
+    margin-top: 2px;
+}
+
+.flour-origin {
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.flour-origin i {
+    color: #d4af37;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .flour-showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .flour-showcase {
+        grid-template-columns: 1fr;
+    }
+    
+    .flour-visual {
+        min-height: 250px;
+    }
+    
+    .flour-pack {
+        max-height: 200px;
+    }
+}
+/* Responsividade */
+@media (max-width: 1200px) {
+    .talharim-premium-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .talharim-premium-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .talharim-premium-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-pouch {
+        min-height: 250px;
+    }
+    
+    .pouch-image {
+        max-height: 220px;
+    }
+}
+
+/* 3. Farinhas Funcionais - Estilo Laboratório */
+.flour-section {
+    background: #f9f9f7;
+    padding: 5rem 0;
+    margin: 5rem 0;
+    position: relative;
+}
+
+.flour-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/media/patterns/grain-pattern.png') repeat;
+    opacity: 0.05;
+}
+
+.flour-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.flour-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.flour-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.flour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+
+.flour-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.flour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.flour-image {
+    height: 200px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.flour-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.flour-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.flour-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.flour-meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.flour-benefits {
+    display: block;
+    font-weight: 500;
+    color: #5a7247; /* Verde natural */
+    margin-top: 0.5rem;
+}
+
+/* 4. Mistura para Bolo - Estilo Confeitaria */
+.cake-mix-section {
+    padding: 5rem 0;
+    background: linear-gradient(to right, #fff 50%, #fcf8f3 50%);
+    background-image: url(/assets/media/bgs/vaishnav-chogale-rihwcorYt-4-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.mix-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mix-content {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.mix-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+.mix-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: var(--light-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.mix-highlight {
+    background: #fff9f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #d4af37;
+    margin: 2rem 0;
+}
+
+.mix-highlight p {
+    margin: 0;
+    font-style: italic;
+    color: #8a6d3b;
+}
+
+.mix-products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.mix-product {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mix-product:hover {
+    transform: translateY(-5px);
+}
+
+.mix-badge {
+    background: #d4af37;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.mix-product img {
+    max-height: 150px;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+.mix-product h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.mix-product p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+/* 5. Linha Gourmet - Estilo Restaurante */
+.gourmet-section {
+    padding: 5rem 0;
+    background: #1a1a1a;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.gourmet-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/media/patterns/dot-pattern.png') repeat;
+    opacity: 0.05;
+}
+
+.gourmet-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.gourmet-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.gourmet-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.gourmet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+
+.gourmet-card {
+    background: #252525;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.gourmet-card::after {
+    content: 'GOURMET';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #d4af37;
+    color: #1a1a1a;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.gourmet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.gourmet-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.gourmet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gourmet-card:hover .gourmet-image img {
+    transform: scale(1.05);
+}
+
+.gourmet-details {
+    padding: 1.5rem;
+}
+
+.gourmet-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.gourmet-specs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 1rem 0;
+}
+
+.gourmet-highlight {
+    color: #d4af37;
+    font-weight: 500;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .brand-art h1 {
+        font-size: 3rem;
+    }
+    
+    .brand-art h1 span {
+        font-size: 3.5rem;
+    }
+    
+    .mix-container {
+        flex-direction: column;
+    }
+    
+    .mix-content {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-art h1 {
+        font-size: 2.5rem;
+    }
+    
+    .brand-art h1 span {
+        font-size: 3rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .flour-section, .cake-mix-section, .gourmet-section {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-art h1 {
+        font-size: 2rem;
+    }
+    
+    .brand-art h1 span {
+        font-size: 2.5rem;
+    }
+    
+    .heritage-badge {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .mix-products {
+        grid-template-columns: 1fr;
+    }
+}
+.youknow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+}
+
+.left-box {
+    flex: 3;
+}
+
+.right-box {	
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-box-left {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin-left: 20px;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.bottom-box-left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+}
+
+.bottom-left {
+    flex: 1;
+    border-right: 5px solid var(--accent-color);
+}
+
+.bottom-right-box {
+    flex: 2;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.top-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.bottom-right {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 5px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.top-right {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 5px;
+    height: 25%;
+}
+@media screen and (max-width: 768px) {
+    .youknow {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .left-box, .right-box {
+        flex: none;
+        width: 100%;
+    }
+    
+    .top-box-left {
+        margin: 0 auto 15px;
+    }
+    
+    .bottom-box-left {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    
+    .top-box-right {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .bottom-right-box{
+        border: none;
+        flex: 1;
+    }
+    .top-right, .bottom-right {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+/* Ajustes específicos para telas muito pequenas */
+@media screen and (max-width: 480px) {
+    
+    .bottom-box-left {
+        height: 120px;
+    }
+    
+    .top-box-left {
+        margin-left: 10px;
+        border-bottom: 4px solid rgb(12, 12, 12);
+    }
+    
+    .bottom-left {
+        border-right: 4px solid rgb(2, 2, 2);
+        flex: 1;
+    }
+    
+    .bottom-right-box {
+        border-bottom: 4px solid rgb(0, 0, 0);
+    }
+    
+    .top-right, .bottom-right {
+        border-left: 4px solid rgb(0, 0, 0);
+        padding-left: 4px;
+    }
+    .bottom-right-box{
+        border: none;
+        flex: 2;
+    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
