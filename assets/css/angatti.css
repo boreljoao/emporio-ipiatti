@@ -14,6 +14,9 @@
     overflow: hidden;
     padding: 2rem;
 }
+html{
+    background-color: #f8f5f03f;
+}
 body{
     background-image: url('/assets/media/bgs/jordane-mathieu-k7VgPnWFcx8-unsplash.jpg');
     background-color: #f8f5f03f; /* Cor de fallback */

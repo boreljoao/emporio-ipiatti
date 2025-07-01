@@ -16,11 +16,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    background-color: #f8f5f03f;
+}
 body {
     font-family: var(--font-secondary);
     color: var(--dark-color);
-    background-color: #f8f5f0; /* Cor de fallback */
+    background-color: #f8f5f03f; /* Cor de fallback */
     background-image: url('/assets/media/bgs/oleksandr-kuzmin-SVwQ3MSgjXE-unsplash.jpg');
     background-attachment: fixed;
     background-size: cover;
