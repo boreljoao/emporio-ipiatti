@@ -821,7 +821,9 @@ body::before {
     flex: 1;
     border-right: 5px solid var(--accent-color);
 }
-
+.footer-social a{
+    text-decoration: none;
+}
 .bottom-right-box {
     flex: 2;
     border-bottom: 5px solid var(--accent-color);
