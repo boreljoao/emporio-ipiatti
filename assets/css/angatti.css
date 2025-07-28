@@ -16,7 +16,6 @@
 }
 
 body{
-    background-image: url('/assets/media/bgs/jordane-mathieu-k7VgPnWFcx8-unsplash.jpg');
     background-color: #f8f5f03f; /* Cor de fallback */
     background-position-y: 90%;
 }
@@ -514,7 +513,6 @@ body::before {
 .cake-mix-section {
     padding: 5rem 0;
     background: linear-gradient(to right, #fff 50%, #fcf8f3 50%);
-    background-image: url(/assets/media/bgs/vaishnav-chogale-rihwcorYt-4-unsplash.jpg);
     background-size: cover;
     background-position: right;
 }

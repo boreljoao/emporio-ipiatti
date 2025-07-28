@@ -21,7 +21,6 @@ body {
     font-family: var(--font-secondary);
     color: var(--dark-color);
     background-color: #f8f5f03b; /* Cor de fallback */
-    background-image: url('/assets/media/bgs/hero-bg.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -100,7 +99,6 @@ body::before {
     z-index: 10;
     opacity: 1 !important; /* Forçar visibilidade */
     transform: none !important; /* Prevenir transformações que possam esconder o conteúdo */
-    background-image: url('/assets/media/bgs/mp-bg.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
