@@ -17,7 +17,6 @@
 
 body{
     background-color: #f8f5f03f; /* Cor de fallback */
-    background-position-y: 190%;
 }
 body::before {
     content: '';
@@ -759,6 +758,10 @@ body::before {
     
     .flour-section, .cake-mix-section, .gourmet-section {
         padding: 3rem 0;
+    }
+    .cake-mix-section{
+        background-image: url('/assets/media/bgs/jordane-mathieu-6pZWqsJoGEw-unsplash.webp') !important;
+        background-position: center;
     }
 }
 

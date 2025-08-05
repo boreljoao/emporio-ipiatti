@@ -98,13 +98,8 @@ body::before {
     position: relative;
     z-index: 10;
     opacity: 1 !important; /* Forçar visibilidade */
-    transform: none !important; /* Prevenir transformações que possam esconder o conteúdo */
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    position: relative;
 }
 .featured-product::before {
     content: '';
@@ -113,7 +108,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(248, 245, 240, 0.253);
+    background-color: rgba(248, 245, 240, 0.178);
     z-index: -1;
 }
 
@@ -438,7 +433,6 @@ body::before {
 /* Featured Product */
 .featured-product {
     padding: 100px 0;
-    position: relative;
     overflow: hidden;
 }
 
@@ -661,6 +655,7 @@ body::before {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-bottom: 60px;
+    
 }
 
 .footer-logo img {
@@ -739,6 +734,7 @@ body::before {
 
 .footer-contact {
     list-style: none;
+    
 }
 
 .footer-contact li {
@@ -753,7 +749,10 @@ body::before {
     font-size: 18px;
     margin-top: 3px;
 }
-
+.footer-contact a{
+    text-decoration: none;
+    color: inherit;
+}
 .footer-contact span {
     opacity: 0.8;
     font-weight: 300;
@@ -897,6 +896,31 @@ body::before {
     
     .certifications-grid {
         grid-template-columns: 1fr;
+    }
+    .footer .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-col{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-contact{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .footer-grid{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     }
 }
 
@@ -1806,12 +1830,31 @@ body::before {
         text-align: center;
     }
     .story-section{
-        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .story-content p:nth-child(2) {
+        display: none;
     }
     .philosophy-section{
-        padding-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 30px;
     }
     .partners-section{
+        padding-top: 30px;
+    }
+    .premium-talharim-section{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .talharim-premium-section{
+        padding-top: 10px;
+    }
+    .functional-flours-section{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .flour-showcase{
         padding-top: 30px;
     }
 }
