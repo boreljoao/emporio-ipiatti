@@ -17,7 +17,7 @@
 
 body{
     background-color: #f8f5f03f; /* Cor de fallback */
-    background-position-y: 90%;
+    background-position-y: 190%;
 }
 body::before {
     content: '';
