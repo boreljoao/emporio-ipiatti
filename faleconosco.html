@@ -83,7 +83,7 @@
 
     <!-- Hero Section -->
     <section class="page-hero">
-        <div class="hero-image lazy-bg" data-bg='/assets/media/bgs/hero-bg.webp' style='background-image:none;'>
+        <div class="hero-image lazy-bg" data-bg="/assets/media/bgs/hero-bg.webp" style="background-image:none;">
             <div class="hero-overlay"></div>
         </div>
         
@@ -91,7 +91,7 @@
             <h1 class="hero-title">Fale Conosco</h1>
             <p class="hero-subtitle">Estamos aqui para responder suas dúvidas</p>
             <div class="breadcrumb">
-                <a href="/">Home</a> > <span>Fale Conosco</span>
+                <a href="/">Home</a> &gt; <span>Fale Conosco</span>
             </div>
         </div>
     </section>
@@ -222,13 +222,13 @@
                     <p>Massas artesanais sem glúten, produzidas com paixão e ingredientes selecionados em Maricá/RJ.</p>
                     
                     <div class="footer-social">
-                        <a href="https://www.instagram.com/emporioipiatti/"style="text-decoration: none" target="_blank">
+                        <a href="https://www.instagram.com/emporioipiatti/" style="text-decoration: none" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://wa.me/message/ADMIG3Z7Z6BUP1"style="text-decoration: none" target="_blank">
+                        <a href="https://wa.me/message/ADMIG3Z7Z6BUP1" style="text-decoration: none" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="https://facebook.com/emporioipiatti"style="text-decoration: none" target="_blank">
+                        <a href="https://facebook.com/emporioipiatti" style="text-decoration: none" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
@@ -284,66 +284,30 @@
     </a>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="/assets/js/main.min.js"></script>
-    <script src="/engine/lazy-bg.js"></script>
-    
-    <script>
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simulate form submission
-            const submitBtn = this.querySelector('button[type="submit"]');
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-            
-            // In a real scenario, you would send the form data to your server here
-            setTimeout(function() {
-                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-                document.getElementById('contactForm').reset();
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Enviar Mensagem';
-            }, 1500);
-        });
-        
-        // Função para detectar se é dispositivo móvel
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
-                   window.innerWidth <= 768;
-        }
-        
-        // Função para gerenciar o clique no email
-        function handleEmailClick(event) {
-            event.preventDefault();
-            
-            if (isMobile()) {
-                // Em dispositivos móveis, usa mailto
-                window.location.href = 'mailto:contato@emporioipiatti.com.br';
-            } else {
-                // Em desktop, redireciona para Gmail
-                window.open('https://mail.google.com/mail/u/0/?fs=1&to=contato@emporioipiatti.com.br&tf=cm', '_blank');
-            }
-        }
-        
-        // Atualizar o link do email baseado no dispositivo
-        function updateEmailLink() {
-            const emailLink = document.getElementById('email-link');
-            if (emailLink) {
-                if (isMobile()) {
-                    emailLink.href = 'mailto:contato@emporioipiatti.com.br';
-                } else {
-                    emailLink.href = '#';
-                }
-            }
-        }
-        
-        // Executar quando a página carregar
-        document.addEventListener('DOMContentLoaded', updateEmailLink);
-        
-        // Executar quando a janela for redimensionada
-        window.addEventListener('resize', updateEmailLink);
-    </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+      <script src="/assets/js/main.min.js" defer></script>
+      <script src="/engine/lazy-bg.min.js" defer></script>
+
+      <script>
+          // Form submission
+          document.getElementById('contactForm').addEventListener('submit', function(e) {
+              e.preventDefault();
+
+              // Simulate form submission
+              const submitBtn = this.querySelector('button[type="submit"]');
+              submitBtn.disabled = true;
+              submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+              // In a real scenario, you would send the form data to your server here
+              setTimeout(function() {
+                  alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                  document.getElementById('contactForm').reset();
+                  submitBtn.disabled = false;
+                  submitBtn.innerHTML = 'Enviar Mensagem';
+              }, 1500);
+          });
+      </script>
+      <script src="/engine/email-link.min.js" defer></script>
 </body>
 </html>
