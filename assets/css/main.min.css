@@ -1429,6 +1429,7 @@ body::before {
     .tab-content {
         padding: 20px;
     }
+    
 }
 /* Contact Section Styles */
 .contact-section {
@@ -1915,6 +1916,12 @@ body::before {
     
     .benefits-grid {
         grid-template-columns: 1fr;
+    }
+    .contact-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
