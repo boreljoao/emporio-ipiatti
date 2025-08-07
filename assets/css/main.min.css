@@ -1495,6 +1495,25 @@ body::before {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para contact cards que são links */
+.contact-card[href] {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
+    background: var(--light-color);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.contact-card[href]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+}
+
 .contact-icon {
     font-size: 1.5rem;
     color: var(--primary-color);
@@ -1783,6 +1802,7 @@ body::before {
 .news-image {
     height: 200px;
     overflow: hidden;
+    position: relative;
 }
 
 .news-image img {
@@ -1794,6 +1814,28 @@ body::before {
 
 .news-card:hover .news-image img {
     transform: scale(1.05);
+}
+
+.news-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse-badge 2s infinite;
+}
+
+@keyframes pulse-badge {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 .news-content {
