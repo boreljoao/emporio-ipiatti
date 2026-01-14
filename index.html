@@ -21,6 +21,30 @@
     <link rel="stylesheet" href="/assets/css/brand-selector.css">
     
     <title>Escolha Sua Experiência | Empório I Piatti</title>
+    
+    <!-- Mobile Redirect - Redirect mobile devices directly to emporio.html -->
+    <style>
+        /* Hide content on mobile while redirecting */
+        @media (max-width: 768px) {
+            body {
+                visibility: hidden;
+            }
+        }
+    </style>
+    <script>
+        (function() {
+            // Detect mobile device
+            function isMobileDevice() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                    || (window.innerWidth <= 768 && window.innerHeight <= 1024);
+            }
+            
+            // Redirect immediately if mobile
+            if (isMobileDevice()) {
+                window.location.replace('/emporio.html');
+            }
+        })();
+    </script>
 </head>
 <body>
     <div class="brand-selector">
