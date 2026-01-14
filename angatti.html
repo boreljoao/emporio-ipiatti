@@ -27,15 +27,20 @@
     <meta name="apple-mobile-web-app-title" content="Emporio Ipiatti" />
     <link rel="manifest" href="/assets/media/favicon/site.webmanifest" />
     
-    <!-- Fonts -->
+    <!-- Fonts - Optimized with font-display: swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="/assets/css/main.min.css" as="style">
+    <link rel="preload" href="/assets/css/angatti.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
     <link rel="stylesheet" href="/assets/css/main.min.css">
     <link rel="stylesheet" href="/assets/css/angatti.min.css">
+    <link rel="stylesheet" href="/assets/css/shop-navigation.min.css">
     
     <title>Angatti - Linha Premium | Emporio I Piatti</title>
 </head>
@@ -51,7 +56,7 @@
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="/" class="logo">
+                <a href="/emporio.html" class="logo">
                     <img loading="lazy" src="/assets/media/logos/Logo2_emporio_IPIATTI.png" alt="Emporio I Piatti">
                 </a>
                 
@@ -62,7 +67,8 @@
                 </div>
                 
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/emporio.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/loja.html" class="nav-link shop-link">Loja</a></li>
                     <li class="nav-item"><a href="/sobrenos.html" class="nav-link">Sobre Nós</a></li>
                     <li class="nav-item"><a href="/parcerias.html" class="nav-link">Parcerias</a></li>
                     <li class="nav-item"><a href="/angatti.html" class="nav-link active">Angatti</a></li>
@@ -90,9 +96,9 @@
 
         <div class="hero-content">
             <img loading="lazy" width="180px" src="/assets/media/logos/ANGATTI_logo_BRANCO.png" alt="Logo Angatti">
-            <p class="hero-subtitle">Linha Premium de Massas Artesanais</p>
+            <p class="hero-subtitle">Linha Premium de Massas proteicas e sem glúten</p>
             <div class="breadcrumb">
-                <a href="/">Home</a> &gt; <span>Angatti</span>
+                <a href="/emporio.html">Home</a> &gt; <span>Angatti</span>
             </div>
         </div>
     </section>
@@ -198,7 +204,7 @@
 <section class="premium-talharim-section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Talharim protéico e sem glúten</h2>
+            <h2 class="section-title">Talharim proteico e sem glúten</h2>
             <p class="section-subtitle">Nutritivos e 100% sem glúten</p>
         </div>
 
@@ -239,7 +245,7 @@
                         <li><i class="fas fa-weight"></i> Peso líquido: 300g</li>
                     </ul>
                     <div class="composition">
-                        <p><strong>Composição:</strong> Farinha de feijão guandu, arroz e quinoa.</p>
+                        <p><strong>Composição:</strong> Farinha de feijão guandu e arroz.</p>
                     </div>
                     <div class="gluten-free-badge">
                         <i class="fas fa-check-circle"></i> NÃO CONTÉM GLÚTEN
@@ -385,7 +391,7 @@
             <div class="mix-container">
                 <div class="mix-content">
                     <h2>Mistura para Bolo</h2>
-                    <p>Desfrute de uma opção prática e deliciosa para o seu dia a dia! Nossa mistura para bolo é feita com ingredientes de alta qualidade, totalmente sem gluten e, se preferir, pode ser preparada sem lactose.</p>
+                    <p>Desfrute de uma opção prática e deliciosa para o seu dia a dia! Nossa mistura para bolo é feita com ingredientes de alta qualidade, totalmente sem glúten e, se preferir, pode ser preparada sem lactose.</p>
                     
                     <div class="mix-highlight">
                         <p>Ideal para quem busca uma refeição rápida, saudável e cheia de sabor, ela traz o melhor da agricultura familiar direto para sua mesa.</p>
@@ -425,7 +431,7 @@
                 <!-- Produto 1 -->
                 <div class="gourmet-card">
                     <div class="gourmet-image">
-                          <img loading="lazy" src="/assets/media/photos/linha-gourmet/bolinho-costela.webp" alt="Bolinho de Costela">
+                          <img loading="lazy" decoding="async" src="/assets/media/photos/linha-gourmet/bolinho-costela.webp" alt="Bolinho de Costela" width="400" height="200">
                     </div>
                     <div class="gourmet-details">
                         <h3>Bolinho de Costela</h3>
@@ -440,7 +446,7 @@
                 <!-- Produto 2 -->
                 <div class="gourmet-card">
                     <div class="gourmet-image">
-                          <img loading="lazy" src="/assets/media/photos/linha-gourmet/croquete-carne.webp" alt="Croquete de Carne">
+                          <img loading="lazy" decoding="async" src="/assets/media/photos/linha-gourmet/croquete-carne.webp" alt="Croquete de Carne" width="400" height="200">
                     </div>
                     <div class="gourmet-details">
                         <h3>Croquete de Carne</h3>
@@ -454,7 +460,7 @@
                 <!--produto 3-->
                 <div class="gourmet-card">
                     <div class="gourmet-image">
-                          <img loading="lazy" src="/assets/media/photos/linha-gourmet/quiche-queijo-aipim.webp" alt="Quiche de Queijo">
+                          <img loading="lazy" decoding="async" src="/assets/media/photos/linha-gourmet/quiche-queijo-aipim.webp" alt="Quiche de Queijo" width="400" height="200">
                     </div>
                     <div class="gourmet-details">
                         <h3>Quiche de Queijo com Farinha de Aipim</h3>
@@ -467,7 +473,7 @@
                 </div>
                 <div class="gourmet-card">
                     <div class="gourmet-image">
-                          <img loading="lazy" src="/assets/media/photos/linha-gourmet/quiche-queijo-taioba.webp" alt="Quiche de Queijo">
+                          <img loading="lazy" decoding="async" src="/assets/media/photos/linha-gourmet/quiche-queijo-taioba.webp" alt="Quiche de Queijo" width="400" height="200">
                     </div>
                     <div class="gourmet-details">
                         <h3>Quiche de Queijo</h3>
@@ -480,7 +486,7 @@
                 </div>
                 <div class="gourmet-card">
                     <div class="gourmet-image">
-                          <img loading="lazy" src="/assets/media/photos/linha-gourmet/panqueca-farinha-aipim.webp" alt="Panqueca de Farinha de Aipim">
+                          <img loading="lazy" decoding="async" src="/assets/media/photos/linha-gourmet/panqueca-farinha-aipim.webp" alt="Panqueca de Farinha de Aipim" width="400" height="200">
                     </div>
                     <div class="gourmet-details">
                         <h3>Panqueca de Farinha de Aipim</h3>
@@ -493,7 +499,7 @@
                 </div>
                 <div class="gourmet-card">
                     <div class="gourmet-image">
-                          <img loading="lazy" src="/assets/media/photos/linha-gourmet/panqueca-taioba.webp" alt="Panqueca de Taioba">
+                          <img loading="lazy" decoding="async" src="/assets/media/photos/linha-gourmet/panqueca-taioba.webp" alt="Panqueca de Taioba" width="400" height="200">
                     </div>
                     <div class="gourmet-details">
                         <h3>Panqueca de Taioba</h3>
@@ -507,6 +513,28 @@
             </div>
         </div>
     </section>
+
+    <!-- Shop CTA Banner -->
+    <section class="shop-cta-banner">
+        <div class="container">
+            <div class="shop-cta-content">
+                <div class="shop-cta-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="shop-cta-text">
+                    <h2>Compre Nossos Produtos Online</h2>
+                    <p>Visite nossa loja e descubra todos os produtos da linha Angatti. Massas proteicas, farinhas funcionais e muito mais. Entrega rápida!</p>
+                </div>
+                <div class="shop-cta-button">
+                    <a href="/loja.html" class="btn-cta-primary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Ir para Loja
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--
      Products Section 
       Products Section 
@@ -617,13 +645,18 @@
         </div>
     </section> -->
 
+    <!-- Floating Shop Button -->
+    <a href="/loja.html" class="floating-shop-btn" title="Ir para Loja">
+        <i class="fas fa-shopping-cart"></i>
+    </a>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-logo">
                     <img loading="lazy" src="/assets/media/logos/Logo2_emporio_IPIATTI.png" alt="Emporio I Piatti">
-                    <p>Massas artesanais sem glúten, produzidas com paixão e ingredientes selecionados em Maricá/RJ.</p>
+                    <p>Massas sem glúten e proteicas, produzidas com paixão e ingredientes selecionados em Maricá/RJ.</p>
                     
                     <div class="footer-social">
                         <a href="https://www.instagram.com/emporioipiatti/" target="_blank">
@@ -641,7 +674,8 @@
                 <div class="footer-col">
                     <h3 class="footer-title">Links Rápidos</h3>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/emporio.html">Home</a></li>
+                        <li><a href="/loja.html">Loja</a></li>
                         <li><a href="/sobrenos.html">Sobre Nós</a></li>
                         <li><a href="/parcerias.html">Parcerias</a></li>
                         <li><a href="/noticias.html">Notícias</a></li>
@@ -686,7 +720,7 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-      <!-- Scripts -->
+      <!-- Scripts - Optimized loading -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
       <script src="/assets/js/main.min.js" defer></script>

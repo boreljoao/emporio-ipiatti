@@ -267,13 +267,14 @@ body::before {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 30px;
     font-weight: 600;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.712);
+    font-weight: bold;
 }
 
 .btn {
@@ -300,7 +301,9 @@ body::before {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-
+.btnwhite:hover{
+color: #fff;
+}
 .btn-outline {
     border: 2px solid var(--white);
     color: var(--white);
